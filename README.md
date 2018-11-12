@@ -1,2 +1,2 @@
 # Navigator
-Another website I'm creating using the Ember-Framework.
+A website created with the Ember-Framework.
