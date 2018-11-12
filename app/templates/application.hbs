@@ -1,0 +1,43 @@
+<div id="top">
+  <div id="header">
+    {{#link-to "index"}}
+      <div class="sprite sprite-navigator-logo"></div>
+    {{/link-to}}
+  </div>
+
+  <div id="body">
+    <div id="navigation">
+      {{#link-to "home" class="home"}}
+        <div class="sprite sprite-house">
+        </div>
+        Home
+      {{/link-to}}
+
+      {{#link-to "creations.start" class="creations"}}
+        Creations
+      {{/link-to}}
+
+      {{#link-to "tutorials" class="tutorials"}}
+        Tutorials
+      {{/link-to}}
+
+      {{#link-to "info" class="info"}}
+        Info
+      {{/link-to}}
+    </div>
+
+    {{outlet}}
+  </div>
+</div>
+
+<div id="footer">
+  <span id="liabilities">
+    {{#link-to "contact" class="contact"}}Contact{{/link-to}}
+    {{#link-to "imprint" class="imprint"}}Imprint{{/link-to}}
+    {{#link-to "privacy" class="privacy"}}Privacy{{/link-to}}
+  </span>
+
+  <span id="author">
+    Copyright &copy; 2019 Alexander Mattheis
+  </span>
+</div>

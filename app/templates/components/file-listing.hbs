@@ -1,0 +1,40 @@
+<article class="listing">
+  <div class="name">
+    <h3>{{vector.title}} <span class="author">by {{vector.author}}</span></h3>
+  </div>
+
+  <a href="{{vector.path}}" download class="download">
+    <span class="text">Download</span>
+    <div class="button">
+      <div class="sprite sprite-download"></div>
+      <div class="date">{{vector.date}}</div>
+    </div>
+  </a>
+
+  <div class="container">
+    <a href {{action "toggleSize"}} class="image-background {{if isResized 'image-resized'}}">
+      <img class="image-foreground" src="{{vector.image}}" alt="Preview">
+    </a>
+
+    <div class="text">
+      <h5>Description</h5>
+      <p class="small-text">
+        {{vector.description}}
+      </p>
+
+      <br>
+
+      <h5>Tags</h5>
+      <p class="small-text">
+        {{vector.tags}}
+      </p>
+    </div>
+
+    <div class="licence">
+      <h5>Licence</h5>
+      <p class="small-text">
+        {{{vector.licence}}}
+      </p>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,415 @@
+/*--------------------------------------------------- DEFINITIONS ----------------------------------------------------*/
+/* COLORS */
+@gray: #dcdcdc;
+@orange: #f6c637;
+@red: #e55457;
+@violet: #473468;
+
+/* colors (dark) */
+@dark-violet: #392b56;
+
+/* colors (light) */
+@light-gray: #f3f3f3;
+@dark-red: #c6383c;
+
+/* DIMENSIONS */
+@default-distance: 60px;
+@width-long-button: 180px;
+@width-short-button: 150px;
+
+/* FONTS */
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("@{fonts}OpenSans-Light.ttf") format("truetype");
+}
+
+/* PATHS */
+@fonts: "../assets/fonts/";
+@images: "../assets/images/";
+
+/* OBJECTS */
+@shadow: 0 0 5px rgba(50, 50, 50, 0.4);
+
+/*--------------------------------------------------- TAG STYLING ----------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: @red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: whitesmoke;  /* fixes the background in Opera 63.0.1 (64-bit) */
+  font-family: "OpenSans-Light", sans-serif;
+  min-width: 800px;
+
+  >.ember-view {
+    height: 100%;  /* to stick footer at the bottom of the page */
+  }
+}
+
+html, body {
+  height: 100%;  /* to stick footer at the bottom of the page */
+}
+
+h4 {
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 2px;
+  padding-bottom: 10px;
+}
+
+/*---------------------------------------------------- ID STYLING ----------------------------------------------------*/
+#author {
+  float: right;
+  margin-right: @default-distance;
+  margin-top: 15px;
+}
+
+#body {
+  background-color: white;
+  margin: @default-distance auto @default-distance auto;
+  max-width: 800px;
+  min-height: 800px;
+  overflow: auto;  /* extends page with respect to the content */
+}
+
+#creations {
+  display: flex;  /* allows divs inside to grow dependent on the page size */
+}
+
+#footer {
+  background: linear-gradient(@violet, @dark-violet);
+  box-shadow: @shadow;
+  color: white;
+  height: 50px;
+  overflow: hidden;
+}
+
+#header {
+  background: linear-gradient(@dark-violet, @violet);
+  box-shadow: @shadow;
+  padding: 5px 0 5px @default-distance;
+}
+
+#liabilities {
+  float: left;
+  margin-left: @default-distance;
+  margin-top: 15px;
+
+  /* TAGS */
+  a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+#navigation {
+  background: white;
+  height: 35px;
+
+  /* TAGS */
+  a {
+    color: black;
+    display: inline-block;
+    height: 35px;
+    padding-top: 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: @dark-violet;
+    color: white;
+  }
+
+  a:hover .sprite-house {
+    background-position: -146px -5px;
+    height: 27px;
+    width: 20px;
+  }
+
+  div {
+    bottom: 5px;
+    display: inline-block;
+    left: 55px;
+    position: absolute;
+  }
+
+  /* CLASSES */
+  .creations {
+    width: @width-short-button;
+  }
+
+  .home {
+    padding-left: 25px;
+    width: @width-long-button;
+  }
+
+  .info {
+    width: @width-long-button;
+  }
+
+  .tutorials {
+    width: @width-short-button;
+  }
+}
+
+#top {
+  min-height: 100%;  /* to stick footer at the bottom of the page */
+  margin-bottom: 50px;
+}
+
+/*-------------------------------------------------- CLASS STYLING ---------------------------------------------------*/
+.content {
+  float: left;
+  line-height: 1.6;
+  padding: 40px;
+  text-align: justify;
+}
+
+.listing {
+  background: white;
+  margin-top: 20px;
+  padding: 10px;
+  width: 540px;
+
+  /* CLASSES */
+  .container {
+    display: inline-block;
+    margin-top: -30px;
+    width: 520px;
+
+    .licence {
+      float: left;
+      height: 120px;
+      padding: 5px;
+      width: 120px;
+
+      /* CLASSES */
+      a {
+        color: @red;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: @dark-red;
+        text-decoration: none;
+      }
+    }
+
+    .image-background {
+      background: white;
+      border-radius: 2px;
+      float: left;
+      height: 120px;
+      margin-top: 10px;
+      position: relative;
+      width: 120px;
+    }
+
+    .image-foreground {
+      display: block;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+      padding: 10px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .image-resized {
+      height: 430px;
+      width: 430px;
+    }
+
+    .text{
+      float: left;
+      height: 120px;
+      margin-bottom: 10px;
+      padding: 5px 5px 5px 6px;
+      width: 181px;  /* fixes the vector-graphic listings in Firefox 63.0.1 (64-bit) */
+    }
+  }
+
+  .download {
+    float: right;
+    position: relative;
+    width: 160px;
+
+    .button {
+      font-size: small;
+      float: right;
+      width: 80px;
+
+      .date {
+        font-weight: bold;
+        margin-top: 5px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .sprite-download {
+        margin: auto;
+      }
+    }
+
+    .text {
+      color: @red;
+      font-weight: bold;
+      float: left;
+      padding-left: 20px;
+      margin-top: 3px;
+      text-decoration: none;
+      width: 80px;
+    }
+  }
+
+  .download:hover {
+    .sprite-download {
+      transform: scale(1.2);
+    }
+  }
+
+  .name {
+    float: left;
+    width: 360px;
+
+    .author {
+      font-size: small;
+    }
+  }
+
+  .small-text {
+    font-size: smaller;
+    text-align: left;
+  }
+}
+
+.pagination {
+  text-align: center;
+
+  /* TAGS */
+  button {
+    background-color: @gray;
+    border: 3px solid @gray;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  /* CLASSES */
+  .control:hover {
+    background-color: @dark-violet;
+    border: 3px solid @dark-violet;
+  }
+
+  .highlighted {
+    background-color: @gray;
+    border: none;
+    cursor: default;
+    width: 25px;
+  }
+
+  .number {
+    background-color: @light-gray;
+    border: none;
+    width: 25px;
+  }
+
+  .number:hover {
+    background-color: @dark-violet;
+    border: none;
+  }
+}
+
+.search {
+  height: 30px;
+  margin: 0 20px 0 20px;
+  width: 500px;
+}
+
+.sidebar {
+  float: left;
+  padding-top: 40px;
+  width: 180px;
+
+  /* TAGS */
+  a {
+    color: black;
+    display: block;
+    padding: 10px 10px 10px 40px;
+    text-decoration: none;
+    width: 180px;
+  }
+
+  a:hover {
+    background: @dark-violet;
+    color: white;
+  }
+
+  /* CLASSES */
+  .dropdown {
+    font-size: 0.8em;
+
+    a {
+      height: 30px !important;
+      padding: 5px 0 5px 70px !important;
+      text-align: left;
+    }
+  }
+}
+
+/*------------------------------------------------------ SPRITES -----------------------------------------------------*/
+.sprite {
+  background: url("@{images}spritesheet.png") no-repeat;
+  display: block;
+}
+
+.sprite-download {
+  background-position: -5px -5px;
+  height: 31px;
+  width: 31px;
+}
+
+.sprite-house {
+  background-position: -116px -5px;
+  height: 27px;
+  width: 20px;
+}
+
+.sprite-navigator-logo {
+  background-position: -51px -46px;
+  height: 40px;
+  width: 118px;
+}
+
+/*------------------------------------------------- BROWSER SPECIFIC -------------------------------------------------*/
+/* Microsoft */
+input::-ms-clear {
+  display: none; /* removes the input-removal symbol "X" */
+}
