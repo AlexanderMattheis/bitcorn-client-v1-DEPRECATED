@@ -9,9 +9,10 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('home');
   this.route('creations', function() {
-    this.route('start');
     this.route('graphics', function() {
-      this.route('textures');
+      this.route('textures', function() {
+        this.route('show', { path: '/:texture_id' });  // the texture id is now passed to the route
+      });
       this.route('vector-graphics');
     });
     this.route('programs', function() {

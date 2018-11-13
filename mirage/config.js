@@ -1,7 +1,7 @@
 import jsonVectorGraphics from './fixtures/vector-graphics';
 import jsonTextures from './fixtures/textures';
 
-const PER_PAGE = 10;
+const PER_PAGE = 1;
 const NAMESPACE = "/api";
 
 export default function() {
@@ -9,6 +9,12 @@ export default function() {
 
     overWriteGetRequest(this, "/creations/graphics/vector-graphics", jsonVectorGraphics);
     overWriteGetRequest(this, "/creations/graphics/textures", jsonTextures);
+
+    // access on an id, as data returned is the listing with the id from the made request
+    this.get('/creations/graphics/textures/:id', function (database, request) {
+        return { data: jsonTextures.find((listing) => request.params.id === listing.id) };
+    });
+
 }
 
 function overWriteGetRequest(instance, path, fixtures) {

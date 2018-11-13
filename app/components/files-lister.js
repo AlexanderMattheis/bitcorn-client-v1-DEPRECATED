@@ -1,18 +1,9 @@
 import Component from '@ember/component';
-import Symbols from '../system/symbols';
 
 export default Component.extend({
     inputValue: "",
     numberOfPages: 1,
     startPage: 1,
-
-    init() {
-        this._super(...arguments);  // executes the method from overridden init()-method with some predefined arguments
-        this.filter(this.inputValue, this.page).then((resultsStruct) => {
-            this.set("results", resultsStruct.results);
-            this.set("numberOfPages", resultsStruct.results.firstObject.number);
-        });  // in the beginning no filtering
-    },
 
     actions: {
         handleFilterEntries(page, resetStartPage) {

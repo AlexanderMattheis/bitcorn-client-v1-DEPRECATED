@@ -4,8 +4,9 @@
     filter=(action "filterByTag") as |data|}}
 
   {{#each data as |listing|}}
-    {{file-listing data=listing linking=false}}
+    {{file-listing
+        data=listing linking=true
+        routeName="creations.graphics.textures.show" model=listing}}
   {{/each}}
 
 {{/files-lister}}
-

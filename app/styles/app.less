@@ -6,7 +6,7 @@
 @violet: #473468;
 
 /* colors (dark) */
-@dark-violet: #392b56;
+@dark-violet: #2d254b;
 
 /* colors (light) */
 @light-gray: #f3f3f3;
@@ -28,7 +28,7 @@
 @images: "../assets/images/";
 
 /* OBJECTS */
-@shadow: 0 0 5px rgba(50, 50, 50, 0.4);
+@shadow: 0 0 5px rgb(71, 52, 104);
 
 /*--------------------------------------------------- TAG STYLING ----------------------------------------------------*/
 * {
@@ -60,6 +60,12 @@ html, body {
   height: 100%;  /* to stick footer at the bottom of the page */
 }
 
+h3 {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 h4 {
   font-style: italic;
   font-weight: normal;
@@ -87,11 +93,19 @@ h4 {
 }
 
 #footer {
-  background: linear-gradient(@violet, @dark-violet);
-  box-shadow: @shadow;
-  color: white;
+  background: #bebebe;
+  box-shadow: 0 0 10px rgba(144, 145, 143, 0.6);
+  color: #404040;
+  font-weight: bold;
   height: 50px;
   overflow: hidden;
+
+  .footer-shader {
+    background: #f7f7f7;
+    height: 50%;
+    opacity: 0.75;
+    width: 100%;
+  }
 }
 
 #header {
@@ -107,14 +121,14 @@ h4 {
 
   /* TAGS */
   a {
-    color: white;
+    color: #404040;
     margin-right: 10px;
     text-decoration: none;
   }
 
   a:hover {
-    color: white;
-    text-decoration: underline;
+    color: #5a4183;
+    text-shadow: 0 0 50px rgb(139, 115, 193);;
   }
 }
 
@@ -124,7 +138,7 @@ h4 {
 
   /* TAGS */
   a {
-    color: black;
+    color: #676767;
     display: inline-block;
     height: 35px;
     padding-top: 6px;
@@ -208,8 +222,7 @@ h4 {
       }
 
       a:hover {
-        color: @dark-red;
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
 

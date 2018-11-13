@@ -1,8 +1,6 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-    start: 1,
-
     didInsertElement() {
         this.send("move", 1, 1);
     },
