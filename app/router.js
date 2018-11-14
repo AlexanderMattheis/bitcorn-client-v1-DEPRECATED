@@ -13,7 +13,7 @@ Router.map(function() {
       this.route('textures', function() {
         this.route('show', { path: '/:texture_id' });  // the texture id is now passed to the route
       });
-      this.route('vector-graphics');
+      this.route('vector-graphics', function() {});
     });
     this.route('programs', function() {
       this.route('powershell-scripts');

@@ -4,7 +4,7 @@ import Regex from "../../../../system/regex";
 import Paths from "../../../../system/paths";
 
 export default Controller.extend({
-    queryParams: ['page'],
+    queryParams: ['page'],  // to send it to the request
     page: 1,
 
     actions: {
@@ -15,7 +15,7 @@ export default Controller.extend({
                     return element.length > 0;
                 });
                 return this.store
-                    .query(Paths.Models.TEXTURE, { tags: filteredParam, page: page })  // filtering by tags, page and
+                    .query(Paths.Models.VECTOR_GRAPHIC, { tags: filteredParam, page: page })  // filtering by tags, page and
                     .then((results) => {
                         let meta = results.get('meta');
                         return { meta: meta, query: query, results: results }
@@ -25,10 +25,10 @@ export default Controller.extend({
                 // and after the results were retrieved, they are returned
                 // together with the corresponding query
                 return this.store
-                    .query(Paths.Models.TEXTURE, { page: page })
+                    .query(Paths.Models.VECTOR_GRAPHIC, { page: page })
                     .then((results) => {
                         let meta = results.get('meta');
-                        return { meta: {total:1}, query: query, results: results }
+                        return { meta: meta, query: query, results: results }
                     });  // show all
             }
         },

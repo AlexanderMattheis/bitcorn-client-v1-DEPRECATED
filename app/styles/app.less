@@ -61,7 +61,12 @@ html, body {
 }
 
 h3 {
+  a {
+    opacity: 0.7;
+  }
+
   a:hover {
+    opacity: 1.0;
     text-decoration: none;
   }
 }
@@ -153,7 +158,7 @@ h4 {
   }
 
   a:hover .sprite-house {
-    background-position: -146px -5px;
+    background-position: -176px -5px;
     height: 27px;
     width: 20px;
   }
@@ -216,7 +221,7 @@ h4 {
       width: 120px;
 
       /* CLASSES */
-      a {
+      a {image-background
         color: @red;
         text-decoration: none;
       }
@@ -226,30 +231,37 @@ h4 {
       }
     }
 
-    .image-background {
-      background: white;
-      border-radius: 2px;
-      float: left;
-      height: 120px;
-      margin-top: 10px;
-      position: relative;
-      width: 120px;
+    .subcontainer {
+      .image-background {
+        background: white;
+        border-radius: 2px;
+        float: left;
+        height: 120px;
+        margin-top: 10px;
+        position: relative;
+        width: 120px;
+      }
+
+      .image-foreground {
+        display: block;
+        margin: auto;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 10px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
-    .image-foreground {
-      display: block;
-      margin: auto;
-      max-height: 100%;
-      max-width: 100%;
-      padding: 10px;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    .subcontainer:hover {
+      .sprite-enlarge {
+        opacity: 1.0;
+      }
 
-    .image-resized {
-      height: 430px;
-      width: 430px;
+      .sprite-reduce {
+        opacity: 1.0;
+      }
     }
 
     .text{
@@ -272,9 +284,10 @@ h4 {
       width: 80px;
 
       .date {
+        color: black;
         font-weight: bold;
         margin-top: 5px;
-        color: black;
+        opacity: 0.7;
         text-align: center;
         text-decoration: none;
       }
@@ -290,14 +303,25 @@ h4 {
       float: left;
       padding-left: 20px;
       margin-top: 3px;
+      opacity: 0.7;
       text-decoration: none;
       width: 80px;
     }
   }
 
   .download:hover {
+    .button {
+      .date {
+        opacity: 1.0;
+      }
+    }
+
     .sprite-download {
-      transform: scale(1.2);
+      opacity: 1.0;
+    }
+
+    .text {
+      opacity: 1.0;
     }
   }
 
@@ -406,20 +430,40 @@ h4 {
 .sprite-download {
   background-position: -5px -5px;
   height: 31px;
+  opacity: 0.7;
   width: 31px;
 }
 
+.sprite-enlarge {
+  background-position: -333px -5px;
+  height: 15px;
+  margin-top: 10px;
+  opacity: 0.7;
+  position: relative;
+  width: 20px;
+}
+
 .sprite-house {
-  background-position: -116px -5px;
+  background-position: -146px -5px;
   height: 27px;
   width: 20px;
 }
 
 .sprite-navigator-logo {
-  background-position: -51px -46px;
+  background-position: -206px -5px;
   height: 40px;
-  width: 118px;
+  width: 117px;
 }
+
+.sprite-reduce {
+  background-position: -46px -5px;
+  height: 15px;
+  margin-top: 10px;
+  opacity: 0.7;
+  position: relative;
+  width: 20px;
+}
+
 
 /*------------------------------------------------- BROWSER SPECIFIC -------------------------------------------------*/
 /* Microsoft */

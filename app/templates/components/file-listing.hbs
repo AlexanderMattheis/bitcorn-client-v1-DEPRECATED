@@ -19,9 +19,12 @@
   </a>
 
   <div class="container">
-    <a href {{action "toggleSize"}} class="image-background {{if isResized 'image-resized'}}">
-      <img class="image-foreground" src="{{data.image}}" alt="Preview">
-    </a>
+    <div class="subcontainer">
+      <a href {{action "toggleSize" this}} class="image-background">
+        <img class="image-foreground" src="{{data.image}}" alt="Preview">
+      </a>
+      <!--<a href {{action "toggleSize" this}} class="sprite sprite-enlarge {{if isResized 'sprite sprite-reduce'}}"></a>-->
+    </div>
 
     <div class="text">
       <h5>Description</h5>

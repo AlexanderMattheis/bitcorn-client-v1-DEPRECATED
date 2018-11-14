@@ -1,10 +1,6 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-    didInsertElement() {
-        this.send("move", 1, 1);
-    },
-
     actions: {
         move(number, numberOfPages) {
             this.setCurrentPage(number, numberOfPages);
