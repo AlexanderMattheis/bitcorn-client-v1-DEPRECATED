@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import Component from '@ember/component';
 
 export default Component.extend({
@@ -30,7 +29,12 @@ export default Component.extend({
                 }
             });
 
-            this.resetImageSize();
+            if (resetStartPage) {  // only if something is typed in, else it is automatically resetted
+                if (window.navigator.imageHasBeenEnlarged) {
+                    this.resetImageSize();
+                    window.navigator.imageHasBeenEnlarged = false;
+                }
+            }
         },
 
         setCurrentPage(page, numberOfPages) {
@@ -47,13 +51,14 @@ export default Component.extend({
 
             elements.each(function (index, element) {
                 if (index %2 === 0) {
-                    element.className = "image-background";
+                    element.style.height = "120px";
+                    element.style.width = "120px";
                 } else {
-                    element.className = "sprite sprite-enlarge";
+                    element.classList.add("sprite-enlarge");
+                    element.classList.remove("sprite-reduce");
                 }
             });
-
-        } else {
+        } else {  // usually not called, due to the global imageHasBeenEnlarged-variable
             // properly waiting in modern browsers until element is rendered (timeouts are not used anymore)
             window.requestAnimationFrame(this.resetImageSize.bind(this));
         }

@@ -1,0 +1,10 @@
+{{#files-lister
+    page=page
+    setPage=(action "setPage")
+    filter=(action "filterByTag") as |data|}}
+
+  {{#each data as |listing|}}
+    {{file-listing data=listing linking=false}}
+  {{/each}}
+
+{{/files-lister}}
