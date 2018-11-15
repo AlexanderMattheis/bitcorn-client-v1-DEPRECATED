@@ -17,6 +17,9 @@
 @width-long-button: 180px;
 @width-short-button: 150px;
 
+/* DURATIONS */
+@button-ease-in: 500ms;
+
 /* FONTS */
 @font-face {
   font-family: "OpenSans-Light";
@@ -133,7 +136,7 @@ h4 {
 
   a:hover {
     color: #5a4183;
-    text-shadow: 0 0 50px rgb(139, 115, 193);;
+    text-shadow: 0 0 50px rgb(139, 115, 193);
   }
 }
 
@@ -155,6 +158,7 @@ h4 {
   a:hover {
     background-color: @dark-violet;
     color: white;
+    transition-duration: @button-ease-in;
   }
 
   a:hover .sprite-house {
@@ -221,7 +225,7 @@ h4 {
       width: 120px;
 
       /* CLASSES */
-      a {image-background
+      a {
         color: @red;
         text-decoration: none;
       }
@@ -407,6 +411,7 @@ h4 {
   a:hover {
     background: @dark-violet;
     color: white;
+    transition-duration: @button-ease-in;
   }
 
   /* CLASSES */
