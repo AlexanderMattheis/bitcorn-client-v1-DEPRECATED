@@ -64,6 +64,9 @@ html, body {
 }
 
 h3 {
+  display: inline-block;
+
+  /* TAGS */
   a {
     opacity: 0.7;
   }
@@ -206,6 +209,50 @@ h4 {
   text-align: justify;
 }
 
+.container {
+  .column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 256px;
+  }
+}
+
+.heading-and-download {
+  margin-bottom: 5px;
+
+  /* CLASSES */
+  .download {
+    color: @red;
+    font-size: large;
+    font-weight: bolder;
+    float: right;
+    opacity: 0.7;
+  }
+
+  .download:hover {
+    opacity: 1.0;
+    text-decoration: none;
+  }
+
+  .history-back {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+  .history-back:hover {
+    opacity: 1.0;
+  }
+
+  .sprite-download {
+    float: right;
+  }
+}
+
+.image {
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+
 .listing {
   background: white;
   margin-top: 20px;
@@ -337,11 +384,6 @@ h4 {
       font-size: small;
     }
   }
-
-  .small-text {
-    font-size: smaller;
-    text-align: left;
-  }
 }
 
 .pagination {
@@ -424,6 +466,12 @@ h4 {
       text-align: left;
     }
   }
+}
+
+.small-text {
+  font-size: smaller;
+  text-align: left;
+  max-width: 512px;
 }
 
 /*------------------------------------------------------ SPRITES -----------------------------------------------------*/

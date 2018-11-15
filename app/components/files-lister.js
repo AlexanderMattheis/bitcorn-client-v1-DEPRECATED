@@ -7,13 +7,19 @@ export default Component.extend({
 
     init() {
         this._super(...arguments);
-        this.send('handleFilterEntries', 1, true);
+        debugger;
+        if (this.restart) {
+            this.send('handleFilterEntries', 1, true);
+        } else {
+            this.send('handleFilterEntries', this.page, false);
+        }
     },
 
     actions: {  // special functions that can be called in templates
         handleFilterEntries(page, resetStartPage) {
             let inputValue = this.inputValue;
             let filterAction = this.filter;
+
             // filters given the typed in stuff from the input field
             // and sets then the filtered results as the returned results "results"
             filterAction(inputValue, page).then((resultsStruct) => {

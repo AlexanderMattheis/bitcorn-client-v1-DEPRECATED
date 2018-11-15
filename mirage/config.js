@@ -1,7 +1,7 @@
 import jsonVectorGraphics from './fixtures/vector-graphics';
 import jsonTextures from './fixtures/textures';
 
-const PER_PAGE = 10;
+const PER_PAGE = 1;
 const NAMESPACE = "/api";
 
 export default function() {

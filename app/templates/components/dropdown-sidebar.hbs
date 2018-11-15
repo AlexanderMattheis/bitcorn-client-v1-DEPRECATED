@@ -2,11 +2,11 @@
   <a class="graphics-dropper" href="/graphics" {{action "click" ".graphics-menu" ".graphics-dropper"}}>&#9658; Graphics</a>
 
   <div class="dropdown graphics-menu">
-    {{#link-to "creations.graphics.textures"}}
+    {{#link-to "creations.graphics.textures.index" (query-params restart=true)}}
       Textures
     {{/link-to}}
 
-    {{#link-to "creations.graphics.vector-graphics"}}
+    {{#link-to "creations.graphics.vector-graphics.index" (query-params restart=true)}}
       Vector Graphics
     {{/link-to}}
   </div>

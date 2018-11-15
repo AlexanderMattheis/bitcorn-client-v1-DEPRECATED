@@ -4,7 +4,7 @@
     filter=(action "filterByTag") as |data|}}
 
   {{#each data as |listing|}}
-    {{file-listing data=listing linking=false}}
+    {{file-listing linking=false model=listing}}
   {{/each}}
 
 {{/files-lister}}

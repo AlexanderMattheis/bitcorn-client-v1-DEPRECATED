@@ -2,26 +2,26 @@
   <div class="name">
     {{#if linking}}
         <h3>
-          {{#link-to routeName model}}{{data.title}}{{/link-to}}
-          <span class="author">by {{data.author}}</span>
+          {{#link-to routeName model}}{{model.title}}{{/link-to}}
+          <span class="author">by {{model.author}}</span>
         </h3>
     {{else}}
-      <h3>{{data.title}} <span class="author">by {{data.author}}</span></h3>
+      <h3>{{model.title}} <span class="author">by {{model.author}}</span></h3>
     {{/if}}
   </div>
 
-  <a href="{{data.path}}" download class="download">
+  <a href="{{model.path}}" download class="download">
     <span class="text">Download</span>
     <div class="button">
       <div class="sprite sprite-download"></div>
-      <div class="date">{{data.date}}</div>
+      <div class="date">{{model.date}}</div>
     </div>
   </a>
 
   <div class="container">
     <div class="subcontainer">
       <a href {{action "toggleSize" this}} class="image-background">
-        <img class="image-foreground" src="{{data.image}}" alt="Preview">
+        <img class="image-foreground" src="{{model.image}}" alt="Preview">
       </a>
       <a href {{action "toggleSize" this}} class="toggleImage sprite sprite-enlarge"></a>
     </div>
@@ -29,21 +29,21 @@
     <div class="text">
       <h5>Description</h5>
       <p class="small-text">
-        {{data.description}}
+        {{model.description}}
       </p>
 
       <br>
 
       <h5>Tags</h5>
       <p class="small-text">
-        {{data.tags}}
+        {{model.tags}}
       </p>
     </div>
 
     <div class="licence">
       <h5>Licence</h5>
       <p class="small-text">
-        {{{data.licence}}}
+        {{{model.licence}}}
       </p>
     </div>
   </div>

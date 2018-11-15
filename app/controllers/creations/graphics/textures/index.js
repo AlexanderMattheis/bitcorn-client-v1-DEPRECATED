@@ -4,7 +4,7 @@ import Regex from "../../../../system/regex";
 import Paths from "../../../../system/paths";
 
 export default Controller.extend({
-    queryParams: ['page'],
+    queryParams: ['page', 'restart'],
     page: 1,
 
     actions: {
@@ -28,7 +28,7 @@ export default Controller.extend({
                     .query(Paths.Models.TEXTURE, { page: page })
                     .then((results) => {
                         let meta = results.get('meta');
-                        return { meta: {total:1}, query: query, results: results }
+                        return { meta: meta, query: query, results: results }
                     });  // show all
             }
         },
