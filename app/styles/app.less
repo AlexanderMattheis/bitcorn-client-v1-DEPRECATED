@@ -3,7 +3,7 @@
 @gray: #dcdcdc;
 @orange: #f6c637;
 @red: #e55457;
-@green: #a0be1c;
+@yellow: #fbe03a;
 
 /* colors (dark) */
 @dark-green: #779219;
@@ -31,7 +31,7 @@
 @images: "../assets/images/";
 
 /* OBJECTS */
-@shadow: 0 0 5px rgba(85, 85, 85, 0.7);
+@shadow: 0 0 5px rgba(99, 99, 99, 0.7);
 
 /*--------------------------------------------------- TAG STYLING ----------------------------------------------------*/
 * {
@@ -92,6 +92,7 @@ h4 {
 
 /*---------------------------------------------------- ID STYLING ----------------------------------------------------*/
 #author {
+  color: #edf2e5;
   float: right;
   margin-right: @default-distance;
   margin-top: 15px;
@@ -110,40 +111,25 @@ h4 {
 }
 
 #footer {
-  background: lightgray;
-  box-shadow: 0 0 10px rgba(144, 145, 143, 0.6);
+  background: rgb(0, 0, 0);
   color: #404040;
   font-weight: bold;
   height: 50px;
   overflow: hidden;
-
-  .footer-shader {
-    background: #f7f7f7;
-    height: 50%;
-    opacity: 0.75;
-    width: 100%;
-  }
 }
 
 #header {
-  background: lightgray;
+  background: linear-gradient(#ed2f38, rgb(200, 34, 40));
   box-shadow: @shadow;
+  padding-left: @default-distance;
   height: 50px;
 
   /* TAGS */
   a h1 {
     letter-spacing: .15em;
-    margin: -20px 0 0 @default-distance;
+    margin: 10px 0 0 @default-distance;
     position: absolute;
     text-shadow: 2px 2px 5px black;
-  }
-
-  /* CLASSES */
-  .header-shader {
-    background: #f7f7f7;
-    height: 25px;
-    opacity: 0.5;
-    width: 100%;
   }
 }
 
@@ -154,15 +140,13 @@ h4 {
 
   /* TAGS */
   a {
-    color: #404040;
+    color: #edf2e5;
     margin-right: 10px;
     text-decoration: none;
-    text-shadow: 1px 1px 1px #747474;
   }
 
   a:hover {
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    color: #ffffff;
   }
 }
 
@@ -179,16 +163,16 @@ h4 {
     position: relative;
     text-align: center;
     text-decoration: none;
-  }
-
-  a:hover {
-    background-color: @green;
-    color: white;
     transition-duration: @button-ease-in;
   }
 
+  a:hover {
+    background-color: @yellow;
+    color: white;
+  }
+
   a:hover .sprite-house {
-    background-position: -176px -5px;
+    background-position: -306px -5px;
     height: 27px;
     width: 20px;
   }
@@ -430,8 +414,8 @@ h4 {
 
   /* CLASSES */
   .control:hover {
-    background-color: @green;
-    border: 3px solid @green;
+    background-color: @yellow;
+    border: 3px solid @yellow;
   }
 
   .highlighted {
@@ -448,7 +432,7 @@ h4 {
   }
 
   .number:hover {
-    background-color: @green;
+    background-color: @yellow;
     border: none;
   }
 }
@@ -471,12 +455,12 @@ h4 {
     padding: 10px 10px 10px 40px;
     text-decoration: none;
     width: 180px;
+    transition-duration: @button-ease-in;
   }
 
   a:hover {
-    background: @green;
+    background: @yellow;
     color: white;
-    transition-duration: @button-ease-in;
   }
 
   /* CLASSES */
@@ -504,14 +488,14 @@ h4 {
 }
 
 .sprite-download {
-  background-position: -5px -5px;
+  background-position: -135px -5px;
   height: 31px;
   opacity: 0.7;
   width: 31px;
 }
 
 .sprite-enlarge {
-  background-position: -46px -5px;
+  background-position: -176px -5px;
   height: 15px;
   margin-top: 10px;
   opacity: 0.7;
@@ -520,19 +504,19 @@ h4 {
 }
 
 .sprite-house {
-  background-position: -146px -5px;
+  background-position: -276px -5px;
   height: 27px;
   width: 20px;
 }
 
-.sprite-navigator-logo {
-  background-position: -206px -5px;
+.sprite-bitcorn-logo  {
+  background-position: -5px -5px;
   height: 40px;
   width: 117px;
 }
 
 .sprite-reduce {
-  background-position: -206px -5px;
+  background-position: -336px -5px;
   height: 15px;
   margin-top: 10px;
   opacity: 0.7;
