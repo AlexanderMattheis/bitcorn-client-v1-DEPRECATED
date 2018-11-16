@@ -7,7 +7,6 @@ export default Component.extend({
 
     init() {
         this._super(...arguments);
-        debugger;
         if (this.restart) {
             this.send('handleFilterEntries', 1, true);
         } else {

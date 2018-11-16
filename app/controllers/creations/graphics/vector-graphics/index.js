@@ -4,7 +4,7 @@ import Regex from "../../../../system/regex";
 import Paths from "../../../../system/paths";
 
 export default Controller.extend({
-    queryParams: ['page'],  // to send it to the request
+    queryParams: ['page', 'restart'],  // to send it to the request
     page: 1,
 
     actions: {

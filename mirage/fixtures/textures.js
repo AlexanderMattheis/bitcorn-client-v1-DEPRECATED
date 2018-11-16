@@ -1,7 +1,7 @@
 // create array of objects [{...}, {...}, ..., {...}]
 export default [{
     type: 'creations/graphics/textures',  // this leads to a search for a model "creations/graphics/vector-texture"
-    id: 'space',
+    id: 'planets',
     attributes: {
         author: 'Alexander Mattheis',
         date: '2018-11-13',
@@ -10,7 +10,7 @@ export default [{
         licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
         path: '/assets/downloads/textures/planets.zip',
         tags: ['planets', 'space', 'universe'],
-        title: 'Space',
+        title: 'Planets',
         writing: 'Some planets I\'ve created with <a href="https://www.gimp.org/" target="_blank">GIMP</a> ' +
             'eight years ago for a friend\'s Trackmania fan page. Maybe you want them, because the website' +
             'has never officially been launched and I have no use for that files.'
