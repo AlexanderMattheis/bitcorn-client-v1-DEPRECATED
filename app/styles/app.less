@@ -3,10 +3,10 @@
 @gray: #dcdcdc;
 @orange: #f6c637;
 @red: #e55457;
-@violet: #473468;
+@green: #a0be1c;
 
 /* colors (dark) */
-@dark-violet: #2d254b;
+@dark-green: #779219;
 
 /* colors (light) */
 @light-gray: #f3f3f3;
@@ -31,7 +31,7 @@
 @images: "../assets/images/";
 
 /* OBJECTS */
-@shadow: 0 0 5px rgb(71, 52, 104);
+@shadow: 0 0 5px rgba(85, 85, 85, 0.7);
 
 /*--------------------------------------------------- TAG STYLING ----------------------------------------------------*/
 * {
@@ -61,6 +61,12 @@ body {
 
 html, body {
   height: 100%;  /* to stick footer at the bottom of the page */
+}
+
+h1 {
+  color: white;
+  font-size: 20pt;
+  font-style: normal;
 }
 
 h3 {
@@ -104,7 +110,7 @@ h4 {
 }
 
 #footer {
-  background: #bebebe;
+  background: lightgray;
   box-shadow: 0 0 10px rgba(144, 145, 143, 0.6);
   color: #404040;
   font-weight: bold;
@@ -120,26 +126,43 @@ h4 {
 }
 
 #header {
-  background: linear-gradient(@dark-violet, @violet);
+  background: lightgray;
   box-shadow: @shadow;
-  padding: 5px 0 5px @default-distance;
+  height: 50px;
+
+  /* TAGS */
+  a h1 {
+    letter-spacing: .15em;
+    margin: -20px 0 0 @default-distance;
+    position: absolute;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  /* CLASSES */
+  .header-shader {
+    background: #f7f7f7;
+    height: 25px;
+    opacity: 0.5;
+    width: 100%;
+  }
 }
 
 #liabilities {
   float: left;
   margin-left: @default-distance;
-  margin-top: 15px;
+  margin-top: 13px;
 
   /* TAGS */
   a {
     color: #404040;
     margin-right: 10px;
     text-decoration: none;
+    text-shadow: 1px 1px 1px #747474;
   }
 
   a:hover {
-    color: #5a4183;
-    text-shadow: 0 0 50px rgb(139, 115, 193);
+    color: white;
+    text-shadow: 1px 1px 1px black;
   }
 }
 
@@ -159,7 +182,7 @@ h4 {
   }
 
   a:hover {
-    background-color: @dark-violet;
+    background-color: @green;
     color: white;
     transition-duration: @button-ease-in;
   }
@@ -407,8 +430,8 @@ h4 {
 
   /* CLASSES */
   .control:hover {
-    background-color: @dark-violet;
-    border: 3px solid @dark-violet;
+    background-color: @green;
+    border: 3px solid @green;
   }
 
   .highlighted {
@@ -425,7 +448,7 @@ h4 {
   }
 
   .number:hover {
-    background-color: @dark-violet;
+    background-color: @green;
     border: none;
   }
 }
@@ -451,7 +474,7 @@ h4 {
   }
 
   a:hover {
-    background: @dark-violet;
+    background: @green;
     color: white;
     transition-duration: @button-ease-in;
   }
@@ -488,7 +511,7 @@ h4 {
 }
 
 .sprite-enlarge {
-  background-position: -333px -5px;
+  background-position: -46px -5px;
   height: 15px;
   margin-top: 10px;
   opacity: 0.7;
@@ -509,7 +532,7 @@ h4 {
 }
 
 .sprite-reduce {
-  background-position: -46px -5px;
+  background-position: -206px -5px;
   height: 15px;
   margin-top: 10px;
   opacity: 0.7;
