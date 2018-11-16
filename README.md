@@ -1,6 +1,5 @@
 # Alexander Mattheis Webpage
-[Always in Progress]
-This repository contains my fictitious website to test out the Ember Framework
+This repository contains my fictitious website [in progess] to test out the Ember Framework
 and modern webpage implementation. It contains a full implemented pagination
 and a search bar which can be used to find tagged objects on my website.
 
