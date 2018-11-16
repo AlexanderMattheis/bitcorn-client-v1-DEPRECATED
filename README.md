@@ -1,6 +1,6 @@
 # Alexander Mattheis Webpage
 This repository contains my currently fictitious website to test out the Ember Framework
-and modern webpage implementation. It contains a full implemented pagination
+and modern webpage implementation. It includes a full implemented pagination
 and a search bar which can be used to find tagged objects on my website.
 
 On that website you can download my creations like vector-graphics,
