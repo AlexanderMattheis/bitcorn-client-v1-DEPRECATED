@@ -1,5 +1,5 @@
-# Alexander Mattheis Webpage
-This repository contains my currently fictitious website to test out the Ember Framework
+# Bitcorn
+This repository contains a website I've created to test out the Ember Framework
 and modern webpage implementation. It includes a full implemented pagination
 and a search bar which can be used to find tagged objects on my website.
 
