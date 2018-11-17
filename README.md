@@ -1,3 +1,5 @@
+<img src="https://github.com/AlexanderMattheis/Bitcorn/blob/master/bitcorn_logo.png" width="128" height="128">
+
 # Bitcorn
 This repository contains a website I've created to test out the Ember Framework
 and modern webpage implementation. It includes a full implemented pagination
