@@ -52,6 +52,13 @@ export default function(){
         this.use('toRight')
     );
 
+    /* creations.graphics.textures */
+    this.transition(
+        this.toRoute('creations.graphics.textures.show'),
+        this.use('toRight', { duration: 1000 }),
+        this.reverse('toLeft'),
+    );
+
     /* creations.programs */
     this.transition(
         this.toRoute('creations.programs'),
@@ -59,14 +66,17 @@ export default function(){
     );
 
     this.transition(
-        this.toRoute('creations.programs.res'),
+        this.toRoute('creations.programs.bioinformatics'),
         this.use('toRight')
     );
 
-    /* textures */
     this.transition(
-        this.toRoute('creations.graphics.textures.show'),
-        this.use('toRight', { duration: 1000 }),
-        this.reverse('toLeft'),
+        this.toRoute('creations.programs.cross-dating'),
+        this.use('toRight')
+    );
+
+    this.transition(
+        this.toRoute('creations.programs.res'),
+        this.use('toRight')
     );
 }

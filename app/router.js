@@ -18,6 +18,7 @@ Router.map(function() {
     this.route('programs', function() {
       this.route('res');
       this.route('cross-dating');
+      this.route('bioinformatics');
     });
   });
 
