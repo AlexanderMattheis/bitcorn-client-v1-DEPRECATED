@@ -1,6 +1,6 @@
 <img src="https://github.com/AlexanderMattheis/Bitcorn/blob/master/bitcorn_logo.png" width="256" height="93">
 
-# Bitcorn
+# BITCORN
 This repository contains a website I've formerly created to test out the Ember Framework
 and modern webpage implementations. It includes a full implemented pagination
 and a search bar which can be used to find tagged objects on my website.
