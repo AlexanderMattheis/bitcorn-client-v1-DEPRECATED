@@ -152,12 +152,14 @@ h4 {
 
 #navigation {
   background: white;
+  font-size: 0;
   height: 35px;
 
   /* TAGS */
   a {
     color: #676767;
     display: inline-block;
+    font-size: medium;
     height: 35px;
     padding-top: 6px;
     position: relative;
@@ -177,14 +179,48 @@ h4 {
     width: 20px;
   }
 
-  div {
-    bottom: 5px;
-    display: inline-block;
-    left: 55px;
-    position: absolute;
+  /* IDs */
+  .dropdown {
+    display: inline;
+    font-size: medium;
+
+    .menu {
+      background-color: white;
+      box-shadow: @shadow;
+      display: none;
+      list-style: none;
+      margin-left: 480px;
+      position: absolute;
+      width: 180px;
+      z-index: 2;
+
+      /* TAGS */
+      li {
+        cursor: pointer;
+        display: block;
+        height: 35px;
+        padding: 7px 0 0 20px;
+      }
+
+      li:hover {
+        background-color: @yellow;
+        color: white;
+      }
+    }
   }
 
-  /* CLASSES */
+  .dropdown:hover {
+    .info {
+      background-color: @red;
+      color: white;
+    }
+
+    .menu {
+      display: block;
+    }
+  }
+
+    /* CLASSES */
   .creations {
     width: @width-short-button;
   }
@@ -195,11 +231,20 @@ h4 {
   }
 
   .info {
+    cursor: pointer;
     width: @width-long-button;
   }
 
   .tutorials {
     width: @width-short-button;
+  }
+
+  /* sprites */
+  .sprite {
+    bottom: 5px;
+    display: inline-block;
+    left: 55px;
+    position: absolute;
   }
 }
 

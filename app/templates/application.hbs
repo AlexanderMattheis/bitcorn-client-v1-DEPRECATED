@@ -6,8 +6,8 @@
   <div id="body">
     <div id="navigation">
       {{#link-to "home" class="home"}}
-        <div class="sprite sprite-house">
-        </div>
+        <span class="sprite sprite-house">
+        </span>
         Home
       {{/link-to}}
       {{#link-to "creations" class="creations"}}
@@ -16,9 +16,15 @@
       {{#link-to "tutorials" class="tutorials"}}
         Tutorials
       {{/link-to}}
-      {{#link-to "info" class="info"}}
-        Info
-      {{/link-to}}
+      <div class="dropdown">
+        <a class="info">
+          Info
+        </a>
+        <ul class="menu">
+          <li>About Authors</li>
+          <li>About Bitcorn</li>
+        </ul>
+      </div>
     </div>
 
     {{liquid-outlet}}

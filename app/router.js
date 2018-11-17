@@ -27,6 +27,8 @@ Router.map(function() {
   this.route('contact');
   this.route('imprint');
   this.route('privacy');
+  this.route('about-authors');
+  this.route('about-page');
 });
 
 export default Router;
