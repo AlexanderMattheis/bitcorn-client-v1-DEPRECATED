@@ -52,6 +52,17 @@ export default function(){
         this.use('toRight')
     );
 
+    /* creations.programs */
+    this.transition(
+        this.toRoute('creations.programs'),
+        this.use('toRight')
+    );
+
+    this.transition(
+        this.toRoute('creations.programs.res'),
+        this.use('toRight')
+    );
+
     /* textures */
     this.transition(
         this.toRoute('creations.graphics.textures.show'),

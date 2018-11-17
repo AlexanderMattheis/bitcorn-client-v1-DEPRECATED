@@ -16,7 +16,8 @@ Router.map(function() {
       this.route('vector-graphics', function() {});
     });
     this.route('programs', function() {
-      this.route('powershell-scripts');
+      this.route('res');
+      this.route('cross-dating');
     });
   });
 
