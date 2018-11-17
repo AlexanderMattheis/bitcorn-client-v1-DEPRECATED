@@ -2,7 +2,7 @@
 
 # Bitcorn
 This repository contains a website I've formerly created to test out the Ember Framework
-and modern webpage implementation. It includes a full implemented pagination
+and modern webpage implementations. It includes a full implemented pagination
 and a search bar which can be used to find tagged objects on my website.
 The idea is to create a platform for interactive, free video-tutorials.
 
