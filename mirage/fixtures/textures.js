@@ -12,7 +12,7 @@ export default [{
         tags: ['planets', 'space', 'universe'],
         title: 'Planets',
         writing: 'Some planets I\'ve created with <a href="https://www.gimp.org/" target="_blank">GIMP</a> ' +
-            'eight years ago for a friend\'s Trackmania fan page. Maybe you want them, because the website' +
+            'eight years ago for a friend\'s Trackmania fan page. Maybe you want them? Because the website ' +
             'has never officially been launched and I have no use for that files.'
     }
 }, {
