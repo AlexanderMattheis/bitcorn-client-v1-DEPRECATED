@@ -23,7 +23,6 @@ Router.map(function() {
   });
 
   this.route('tutorials');
-  this.route('info');
   this.route('contact');
   this.route('imprint');
   this.route('privacy');

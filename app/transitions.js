@@ -15,25 +15,31 @@ export default function(){
         this.use('toDown')
     );
 
+    /* info */
     this.transition(
-        this.toRoute('info'),
+        this.toRoute('about-authors'),
+        this.use('toDown')
+    );
+
+    this.transition(
+        this.toRoute('about-page'),
         this.use('toDown')
     );
 
     /* liabilities */
     this.transition(
         this.toRoute('contact'),
-        this.use('toRight')
+        this.use('toDown')
     );
 
     this.transition(
         this.toRoute('imprint'),
-        this.use('toRight')
+        this.use('toDown')
     );
 
     this.transition(
         this.toRoute('privacy'),
-        this.use('toRight')
+        this.use('toDown')
     );
 
     /* creations.graphics */
