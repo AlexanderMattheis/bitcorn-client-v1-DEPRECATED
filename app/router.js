@@ -22,7 +22,18 @@ Router.map(function() {
     });
   });
 
-  this.route('tutorials');
+  this.route('tutorials', function() {
+    this.route('development', function() {
+      this.route('algorithms');
+      this.route('data-structures');
+      this.route('languages');
+    });
+    this.route('design', function() {
+      this.route('blender');
+      this.route('gimp');
+      this.route('inkscape');
+    });
+  });
   this.route('contact');
   this.route('imprint');
   this.route('privacy');
