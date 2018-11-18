@@ -21,8 +21,12 @@
           Info
         </a>
         <ul class="menu">
-          <li>About Authors</li>
-          <li>About Bitcorn</li>
+          {{#link-to "about-authors" tagName="li"}}
+            About Authors
+          {{/link-to}}
+          {{#link-to "about-page" tagName="li"}}
+            About Bitcorn
+          {{/link-to}}
         </ul>
       </div>
     </div>
