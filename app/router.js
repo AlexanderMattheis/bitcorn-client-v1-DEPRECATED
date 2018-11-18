@@ -24,7 +24,9 @@ Router.map(function() {
 
   this.route('tutorials', function() {
     this.route('development', function() {
-      this.route('algorithms');
+      this.route('algorithms', function() {
+        this.route('needleman-wunsch');
+      });
       this.route('data-structures');
       this.route('languages');
     });
