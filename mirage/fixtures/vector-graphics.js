@@ -14,7 +14,7 @@ export default [
             title: 'Community'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'dna',
         attributes: {
             author: 'Alexander Mattheis',
@@ -27,7 +27,7 @@ export default [
             title: 'DNA'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'envelope_empty',
         attributes: {
             author: 'Alexander Mattheis',
@@ -40,7 +40,7 @@ export default [
             title: 'Envelope (empty)'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'folder',
         attributes: {
             author: 'Alexander Mattheis',
@@ -53,7 +53,7 @@ export default [
             title: 'Folder'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'garbage_can',
         attributes: {
             author: 'Alexander Mattheis',
@@ -66,7 +66,7 @@ export default [
             title: 'Garbage Can (empty)'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'golden_coin',
         attributes: {
             author: 'Alexander Mattheis',
@@ -79,7 +79,7 @@ export default [
             title: 'Golden Coin'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'golden_fish',
         attributes: {
             author: 'Alexander Mattheis',
@@ -92,7 +92,7 @@ export default [
             title: 'Golden Fish'
     }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'hammer',
         attributes: {
             author: 'Alexander Mattheis',
@@ -105,7 +105,7 @@ export default [
             title: 'Hammer'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'heart',
         attributes: {
             author: 'Alexander Mattheis',
@@ -118,7 +118,7 @@ export default [
             title: 'Heart'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'hyperlink',
         attributes: {
             author: 'Alexander Mattheis',
@@ -131,7 +131,7 @@ export default [
             title: 'Hyperlink'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'libra',
         attributes: {
             author: 'Alexander Mattheis',
@@ -144,7 +144,7 @@ export default [
             title: 'Libra'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'light_bulb',
         attributes: {
             author: 'Alexander Mattheis',
@@ -157,7 +157,7 @@ export default [
             title: 'Light Bulb'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'monster',
         attributes: {
             author: 'Alexander Mattheis',
@@ -170,7 +170,7 @@ export default [
             title: 'Monster'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'new_file',
         attributes: {
             author: 'Alexander Mattheis',
@@ -183,7 +183,7 @@ export default [
             title: 'New File'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'next',
         attributes: {
             author: 'Alexander Mattheis',
@@ -196,7 +196,7 @@ export default [
             title: 'Next'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'off',
         attributes: {
             author: 'Alexander Mattheis',
@@ -209,7 +209,7 @@ export default [
             title: 'Off'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'ok',
         attributes: {
             author: 'Alexander Mattheis',
@@ -222,7 +222,7 @@ export default [
             title: 'OK'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'on',
         attributes: {
             author: 'Alexander Mattheis',
@@ -235,7 +235,7 @@ export default [
             title: 'On'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'palm',
         attributes: {
             author: 'Alexander Mattheis',
@@ -248,7 +248,7 @@ export default [
             title: 'Palm'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'paperclip',
         attributes: {
             author: 'Alexander Mattheis',
@@ -261,7 +261,72 @@ export default [
             title: 'Paperclip'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
+        id: 'pencil',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'Have you something to write?',
+            image: '/assets/images/vector_graphics/pencil.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/pencil.svg',
+            tags: ['pencil', 'writing'],
+            title: 'Pencil'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'picture',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'The sun is rising up? A new day begins.',
+            image: '/assets/images/vector_graphics/picture.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/picture.svg',
+            tags: ['image', 'photo', 'picture'],
+            title: 'Picture'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'pine',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'A great tree, multiple times reusable for Christmas.',
+            image: '/assets/images/vector_graphics/pine.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/pine.svg',
+            tags: ['fir tree', 'pine', 'spruce'],
+            title: 'Pine'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'profile',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'If you don\'t recognize me, I\'m a businessman!',
+            image: '/assets/images/vector_graphics/profile.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/profile.svg',
+            tags: ['business', 'man', 'profile'],
+            title: 'Profile'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'question_block',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'An idea, use it to break your character\'s head.',
+            image: '/assets/images/vector_graphics/question_block.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/question_block.svg',
+            tags: ['block', 'question'],
+            title: 'Question Block'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
         id: 'rating_bar_green',
         attributes: {
             author: 'Alexander Mattheis',
@@ -274,7 +339,7 @@ export default [
             title: 'Rating Bar (green)'
         }
 }, {
-        type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
         id: 'rating_bar_red',
         attributes: {
             author: 'Alexander Mattheis',
@@ -287,7 +352,46 @@ export default [
             title: 'Rating Bar (red)'
         }
 }, {
-    type: 'creations/graphics/vector-graphics',  // this leads to a search for a model "creations/graphics/vector-graphic"
+        type: 'creations/graphics/vector-graphics',
+        id: 'save',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'I need your help. Please, save me!',
+            image: '/assets/images/vector_graphics/save.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/save.svg',
+            tags: ['disk', 'floppy', 'save'],
+            title: 'Save'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'save_as',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'Save me as your easter bunny!',
+            image: '/assets/images/vector_graphics/save_as.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/save_as.svg',
+            tags: ['disk', 'floppy', 'save as'],
+            title: 'Save As'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'silberpfeil',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'Do you know me? I\'m a Mercedes.',
+            image: '/assets/images/vector_graphics/silberpfeil.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/silberpfeil.svg',
+            tags: ['automobile', 'race car', 'vehicle'],
+            title: 'Silberpfeil'
+        }
+}, {
+    type: 'creations/graphics/vector-graphics',
     id: 'superstar',
     attributes: {
         author: 'Alexander Mattheis',
@@ -299,4 +403,30 @@ export default [
         tags: ['celebration', 'superstar'],
         title: 'Superstar'
     },
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'switch_block',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'What happens if you toggle the switch?',
+            image: '/assets/images/vector_graphics/switch_block.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/switch_block.svg',
+            tags: ['exclamation mark', 'switch'],
+            title: 'Switch Block'
+        }
+}, {
+        type: 'creations/graphics/vector-graphics',
+        id: 'warning',
+        attributes: {
+            author: 'Alexander Mattheis',
+            date: '2018-11-20',
+            description: 'I warn you to leave this page!',
+            image: '/assets/images/vector_graphics/warning.png',
+            licence: '<a href="https://creativecommons.org/publicdomain/zero/1.0/deed" target="_blank">CC0 1.0 Universal</a>',
+            path: '/assets/downloads/vector_graphics/warning.svg',
+            tags: ['exclamation mark', 'switch'],
+            title: 'Warning!'
+        }
 }];

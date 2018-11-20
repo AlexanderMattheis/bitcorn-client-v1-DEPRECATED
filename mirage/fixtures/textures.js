@@ -16,7 +16,7 @@ export default [{
             'has never officially been launched and I have no use for that files.'
     }
 }, {
-    type: 'creations/graphics/textures',  // this leads to a search for a model "creations/graphics/vector-texture"
+    type: 'creations/graphics/textures',
     id: 'surfaces',
     attributes: {
         author: 'Alexander Mattheis',
@@ -34,7 +34,7 @@ export default [{
             'the fact they were not professional enough). Hopefully, somebody finds some use in them.'
     }
 }, {
-    type: 'creations/graphics/textures',  // this leads to a search for a model "creations/graphics/vector-texture"
+    type: 'creations/graphics/textures',
     id: 'synthetics',
     attributes: {
         author: 'Alexander Mattheis',
